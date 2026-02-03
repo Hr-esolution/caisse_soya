@@ -1,45 +1,123 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+```
+# Flutter/Dart specific
 .dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
+.build/
+packages/
+*.iws
+*.log
+**/logs
 
-# Symbolication related
-app.*.symbols
+# Dependencies
+vendor/
+node_modules/
+.platformio/
 
-# Obfuscation related
-app.*.map.json
+# Environment variables
+.env
+.env.local
+.env.*
+!.env.example
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.log.*
+
+# Coverage
+coverage/
+*.lcov
+
+# Testing
+.dart_test_command.json
+
+# Build artifacts
+build/
+bin/cache/
+bin/analysis-driver.snapshot
+bin/dartdoc.dart.snapshot
+bin/fuchsia_gen_snapshot.dart.snapshot
+bin/kernel-service.ddc.dill
+bin/melos_bootstrap.dart.snapshot
+bin/pub.dart.snapshot
+bin/resolver.dart.snapshot
+flutter/*.jar
+flutter/bin/internal/ephemeral/
+flutter_export_environment.sh
+
+# Packages
+*.tar.gz
+*.tar.xz
+
+# Distribution / packaging
+.dart_tool/package_config_subset/
+.dart_tool/extension_discovery/
+.dart_tool/scratch_space/
+.dart_tool/test_results.json
+.dart_tool/version_override/
+
+# Web
+web/.build/
+web/build/
+web/packages/
+
+# Android
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/generated/
+android/**/external_native_build/
+android/**/build/
+android/app/intermediates/
+android/app/src/main/kotlin/**/*.kotlin
+android/app/src/main/java/**/*.java
+android/app/src/profile/**
+android/app/src/debug/**
+android/app/src/*/res/raw/**
+android/app/src/*/assets/**
+android/app/src/main/assets/**
+android/app/src/main/res/raw/**
+android/app/src/main/res/resources.arsc
+android/app/src/main/res/drawable-*/
+android/app/src/main/res/drawable_*/
+android/app/src/main/res/mipmap-*/
+android/app/src/main/res/mipmap_*/
+
+# iOS
+ios/Pods/
+ios/Flutter/.last_build_id
+ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/Runner.xcworkspace/contents.xcworkspacedata
+ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/Runner.xcworkspace/xcuserdata/
+ios/Runner.xcodeproj/xcuserdata/
+ios/Runner.xcodeproj/project.xcworkspace/xcuserdata/
+ios/Flutter/App.framework/flutter_assets/packages/
+ios/Flutter/App.framework/flutter_assets/shaders/
+ios/Flutter/App.framework/flutter_assets/vm_snapshot_data
+ios/Flutter/App.framework/flutter_assets/isolate_snapshot_data
+ios/Flutter/App.framework/flutter_assets/kernel_blob.bin
+ios/Flutter/App.framework/
+ios/Flutter/engine/
+ios/Flutter/ephemeral/
+ios/.symlinks/
+ios/Flutter/App.framework/flutter_assets/lib/
+ios/Flutter/App.framework/flutter_assets/assets/
+Pods/
+Podfile.lock
+```
